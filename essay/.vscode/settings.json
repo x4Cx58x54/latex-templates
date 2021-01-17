@@ -1,0 +1,6 @@
+{
+    "code-runner.executorMapByGlob": {
+        "*.tex": "cd $dir ; node md2tex.js essay ; if ($?) { xelatex essay.tex }",
+        "*.md":  "cd $dir ; node md2tex.js essay ; if ($?) { xelatex essay.tex }",
+    },
+}
