@@ -21,7 +21,7 @@
 % \usepackage{tikz}
 % \usepackage[noline]{algorithm2e}
 
-\geometry{top=36mm, bottom=30mm, left=32mm, right=32mm}
+\geometry{top=36mm, bottom=30mm, left=32mm, right=32mm, headheight=13pt}
 \pagestyle{empty}
 
 \ctexset{section={name={第 , 章},format={\center\heiti\zihao{3}\bfseries}}}
@@ -42,6 +42,7 @@
 \numberwithin{figure}{section}
 \numberwithin{table}{section}
 \numberwithin{equation}{section}
+
 % \newcommand{\di}{\mathrm{d}}
 % \newcommand{\e}{\mathrm{e}}
 
@@ -66,11 +67,11 @@
 
 \lstdefinestyle{shared}
 {
-    backgroundcolor=\color[RGB]{248,248,248},
-    basicstyle=\linespread{1.1}\normalsize\consolas,
-    frame=l,
-    framesep=4pt,
-    framerule=0pt
+  backgroundcolor=\color[RGB]{248,248,248},
+  basicstyle=\linespread{1.1}\normalsize\consolas,
+  frame=l,
+  framesep=4pt,
+  framerule=0pt
 }
 
 \lstdefinestyle{appendix}
@@ -90,18 +91,17 @@
 }
 
 \setlength{\baselineskip}{20pt}
-%\setlength{\parskip}{4pt}
+\setlength{\parskip}{4pt}
 \renewcommand\arraystretch{1.2} % linespread in tables
 \linespread{1.3}
-\setlength{\headheight}{13pt}
 
 
 \begin{document}
+\zihao{-4}
 
-\begin{titlepage}
 \newgeometry{top=25mm, bottom=25mm, left=32mm, right=32mm}
+\begin{titlepage}
 \begin{center}
-\parskip=0pt
 
 \vspace*{20mm}
 
@@ -120,7 +120,7 @@
 \vfill
 
 {
-\linespread{2}\selectfont
+\linespread{1.8}\selectfont
 \begin{tabular}{
   >{\centering\fontsize{14pt}{14pt}\selectfont\heiti\arraybackslash}c
   >{\centering\fontsize{14pt}{14pt}\selectfont\fangsong\arraybackslash}p{80mm}
@@ -142,43 +142,30 @@
 }
 
 \end{center}
-\restoregeometry
 \end{titlepage}
+\restoregeometry
 
 % \cleardoublepage %---------------------------
 
-\clearpage
-\zihao{-4}
-
-
-\newgeometry{left=4.2cm, right=4.2cm}
-
+\newgeometry{left=42mm, right=42mm}
 \thispagestyle{empty}
-
 \vspace*{15mm}
 \begin{abstract}
 \zihao{-4}
-
 滚滚长江东逝水，浪花淘尽英雄。是非成败转头空，青山依旧在，几度夕阳红。白发渔樵江渚上，惯看秋月春风。一壶浊酒喜相逢，古今多少事， 都付笑谈中。
 
 \noindent \textbf{关键词：}长江，浪花，英雄，青山，夕阳
-
 \end{abstract}
-
 \restoregeometry
 
 % \cleardoublepage %---------------------------
 
-\clearpage
-\zihao{-4}
-
-\clearpage
 \setcounter{tocdepth}{3}
 \tableofcontents
+
 % \cleardoublepage %---------------------------
 
 \clearpage
-\setlength{\parskip}{4pt}
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0.3pt}
