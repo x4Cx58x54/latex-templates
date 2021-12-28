@@ -2,6 +2,8 @@
 
 Convert simple markdown to LaTeX.
 
+Author: x4Cx58x54
+
 Usage: node md2tex.js filename
   convert `filename_content.md' into LaTeX and write to
   `filename_content.tex', which is read by `input' command
@@ -73,8 +75,8 @@ var file_name_md = file_name + '_content.md';
 var file_name_tex = file_name + '_content.tex';
 
 var flag_sectioning = true;
-var flag_chn_period = true;
-var flag_chn_punct = false;
+var flag_chn_period = false;
+var flag_chn_punct = true;
 var flag_img = true;
 var flag_misc = true;
 var flag_bf_it = false; //buggy!
@@ -129,7 +131,7 @@ if (flag_img) {
       // single image
       // usage: ![caption](filename)label,size
       // at the beginning of line
-      // e.g.: ![example](./img/example.png),fig:example,width=0.8\textwidth
+      // e.g.: ![example](./img/example.png)fig:example,width=0.8\textwidth
       [
         /^!\[(.*)\]\((.*)\)(.*),(.*)$/gm,
         `
