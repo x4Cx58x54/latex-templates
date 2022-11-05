@@ -1,5 +1,5 @@
 {
     "code-runner.executorMapByGlob": {
-        "*.tex": "cd $dir && latex $fileNameWithoutExt && dvisvgm $fileNameWithoutExt --font-form=ttf"
+        "*.tex": "cd $dir && latex $fileNameWithoutExt && dvisvgm $fileNameWithoutExt --font-form=ttf --precision=3 --optimize"
     }
 }
